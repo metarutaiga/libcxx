@@ -18,7 +18,7 @@ _LIBCPP_CRT_FUNC bool __cdecl __ExceptionPtrCompare(const void*, const void*) { 
 _LIBCPP_CRT_FUNC bool __cdecl __ExceptionPtrToBool(const void*) { return false; }
 _LIBCPP_CRT_FUNC void __cdecl __ExceptionPtrSwap(void*, void*) {}
 _LIBCPP_CRT_FUNC void __cdecl __ExceptionPtrCurrentException(void*) {}
-_LIBCPP_CRT_FUNC void __cdecl __ExceptionPtrRethrow(const void*) {}
+[[noreturn]] _LIBCPP_CRT_FUNC void __cdecl __ExceptionPtrRethrow(const void*) {}
 _LIBCPP_CRT_FUNC void __cdecl
 __ExceptionPtrCopyException(void*, const void*, const void*) {}
 

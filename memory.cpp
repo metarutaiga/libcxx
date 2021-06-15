@@ -38,7 +38,7 @@ __shared_weak_count::~__shared_weak_count()
 {
 }
 
-#if 0 && defined(_LIBCPP_DEPRECATED_ABI_LEGACY_LIBRARY_DEFINITIONS_FOR_INLINE_FUNCTIONS)
+#if defined(_LIBCPP_DEPRECATED_ABI_LEGACY_LIBRARY_DEFINITIONS_FOR_INLINE_FUNCTIONS)
 void
 __shared_count::__add_shared() _NOEXCEPT
 {
@@ -200,7 +200,7 @@ undeclare_no_pointers(char*, size_t)
 {
 }
 
-#if 0 && !defined(_LIBCPP_ABI_POINTER_SAFETY_ENUM_TYPE)
+#if !defined(_LIBCPP_ABI_POINTER_SAFETY_ENUM_TYPE)
 pointer_safety get_pointer_safety() _NOEXCEPT
 {
     return pointer_safety::relaxed;
